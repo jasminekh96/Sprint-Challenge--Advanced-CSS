@@ -1,1 +1,29 @@
 // Navigation code here
+.navintro {
+	.navborder();
+}
+header nav {
+	display: flex;
+	vertical-align: top;
+	padding: 10px;
+	.justify();
+	margin-left: 200px;
+	width: 50%;
+
+	a {
+		font-size: 15px;
+		color: @nav-font;
+		text-decoration: none;
+	}
+}
+@media @phone {
+	.main-head {
+		width: 90%;
+		margin-left: 23px;
+	}
+	header nav {
+		width: 60%;
+		justify-content: space-between;
+		margin-left: 100px;
+	}
+}
