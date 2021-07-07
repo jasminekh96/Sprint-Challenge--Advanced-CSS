@@ -1,1 +1,25 @@
 // Mixins Here
+.custom-btn(@btn-bg-color, @sea-shell) {
+	display: block;
+	background: @btn-bg-color;
+	color: @sea-shell;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 1.8rem;
+	border-radius: 8px;
+	text-align: center;
+	width: 30%;
+	@media @phone {
+		width: 450px;
+		padding: 20px 0;
+	}
+}
+
+.justify {
+	align-content: center;
+	justify-content: space-evenly;
+}
+.navborder {
+	border-bottom: 1px solid @nav-border;
+	background: @nav-bg;
+}
